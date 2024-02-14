@@ -1,10 +1,15 @@
 import React from "react";
 import Profile from "./components/Profile";
 import "./App.css";
+import Avatar from "./components/Avatar";
 
 export default function AppProfile() {
   return (
     <>
+      <Avatar
+        image="https://avatars.githubusercontent.com/u/87633110?v=4"
+        isNew={true}
+      />
       <Profile
         image="https://avatars.githubusercontent.com/u/87633110?v=4"
         name="James Kim"
