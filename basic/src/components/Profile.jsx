@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function Profile() {
+export default function Profile({image, name, title}) {
   return (
     <div className="profile">
-        <img className="photo" src="https://avatars.githubusercontent.com/u/87633110?v=4" 
-        alt='avatar'/>
-        <h1>James Kim</h1>
-        <p>프론트엔드 개발자</p>
-
+      <img
+        className="photo"
+        src={image}
+        alt="avatar"
+      />
+      <h1>{name}</h1>
+      <p>{title}</p>
     </div>
-  )
+  );
 }
