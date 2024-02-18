@@ -6,6 +6,10 @@ import Avatar from "./components/Avatar";
 export default function AppProfile() {
   return (
     <>
+    <button onClick={(event)=>{
+      console.log(event);
+      alert("버튼이 클릭됨!")
+    }}>버튼</button>
       <Avatar
         image="https://avatars.githubusercontent.com/u/87633110?v=4"
         isNew={true}
